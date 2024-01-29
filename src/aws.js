@@ -3,8 +3,8 @@ import { CognitoUserPool, CognitoUser, AuthenticationDetails } from 'amazon-cogn
 
 const useAwsAuth = () => {
   const userPool = new CognitoUserPool({
-    UserPoolId: 'us-east-1_XJUyWSsLS',
-    ClientId: '3odnu9lp2aldvaf40nco86u93h',
+    UserPoolId: import.meta.env.VITE_AWS_USERPOOL_ID,
+    ClientId: import.meta.env.VITE_AWS_CLIENT_ID,
   })
 
   const error = ref(null)
