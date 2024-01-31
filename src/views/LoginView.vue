@@ -18,8 +18,8 @@ const router = useRouter()
 
 const { error, currentUser, login, getCurrentUserDetails } = useAwsAuth()
 
-const username = ref('test2@codenv.me')
-const password = ref('Saraeyka_96')
+const username = ref('')
+const password = ref('')
 
 const handleLogin = async () => {
   try {
